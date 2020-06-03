@@ -1,0 +1,3 @@
+"c++ header
+set path+=/home/xiaoju/yujixing/hermes-trip/third_party/gcc/include/c++/5.2.0,/home/xiaoju/yujixing/hermes-trip/include
+set path+=/home/xiaoju/yujixing/hermes/third_party/gcc/include/c++/5.2.0,/home/xiaoju/yujixing/hermes/include
