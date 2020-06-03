@@ -2,6 +2,11 @@
 
 DIR=`pwd`
 
+echo "moving old vim configs..."
+unlink ~/.vimrc
+unlink ~/.vimrc.local
+unlink ~/.vim
+
 echo "linking files begin"
 ln -s ${DIR}/.vimrc ~/.vimrc
 ln -s ${DIR}/.vimrc.local ~/.vimrc.local 
@@ -15,5 +20,11 @@ if [ ! -d ${YCM_PATH} ]; then
     echo "Note: You Need To build YCM by yourself!!"
     echo ""
 fi
+
+echo "making folders of vim backups"
+mkdir -p ~/.vim/files/backup/
+mkdir -p ~/.vim/files/swap/
+mkdir -p ~/.vim/files/undo/
+mkdir -p ~/.vim/files/info/
 
 echo "linking files done"
