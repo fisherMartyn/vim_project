@@ -1,5 +1,5 @@
 " source self definition
-source .vimrc.local
+source ~/.vimrc.local
 " ctags
 "noremap <c-]> g<c-]>
 
