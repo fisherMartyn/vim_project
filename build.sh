@@ -7,6 +7,11 @@ unlink ~/.vimrc
 unlink ~/.vimrc.local
 unlink ~/.vim
 
+DT=`date +"%Y-%m-%d_%H-%M-%S"`
+mv ~/.vimrc /tmp/.vimrc.${DT}
+mv ~/.vimrc.local /tmp/.vimrc.local.${DT}
+mv ~/.vim /tmp/.vim.${DT}
+
 echo "linking files begin"
 ln -s ${DIR}/.vimrc ~/.vimrc
 ln -s ${DIR}/.vimrc.local ~/.vimrc.local 
